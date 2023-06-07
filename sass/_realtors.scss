@@ -9,6 +9,10 @@
 
   row-gap: 2rem;
 
+  @include respondMax($bpw-800) {
+    grid-column: full-start/full-end;
+  }
+
   &__list {
     display: grid;
     grid-template-columns: auto max-content;
@@ -16,6 +20,13 @@
     column-gap: 2rem;
     row-gap: 5vh;
     align-items: center;
+
+    @include respondMax($bpw-800) {
+      grid-template-columns: repeat(3, auto max-content);
+    }
+    @include respondMax($bpw-600) {
+      grid-template-columns: auto max-content;
+    }
   }
 
   &__img {

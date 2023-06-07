@@ -1,5 +1,7 @@
 $bpw-1200: 1200px;
 $bpw-1000: 1000px;
+$bpw-800: 800px;
+$bpw-600: 600px;
 
 @mixin respondMax($bpw) {
   @media only screen and (max-width: ($bpw /16px * 1em)) {

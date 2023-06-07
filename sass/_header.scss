@@ -18,6 +18,13 @@
   padding: 8rem;
   padding-top: 4rem;
 
+  @include respondMax($bpw-800) {
+    grid-column: full-start/full-end;
+  }
+
+  @include respondMax($bpw-600) {
+    padding: 5rem;
+  }
   &__logo {
     height: 3rem;
     justify-self: center;

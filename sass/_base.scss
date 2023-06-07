@@ -60,4 +60,8 @@ body {
       )
       [center-end] minmax(6rem, 1fr);
   }
+
+  @include respondMax($bpw-800) {
+    grid-template-rows: 6rem calc(100vh - 6rem);
+  }
 }
